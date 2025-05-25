@@ -1,0 +1,15 @@
+# -------------------------------------------------
+# CODEOWNERS - For automated review request for
+# high impact files.
+#
+# Important: The order of the rules are important; 
+# the rule furthest down overrides previous rules.
+#
+# https://help.github.com/articles/about-codeowners
+# -------------------------------------------------
+
+# -------------------------------------------------
+# All files are owned by the organisation owners
+# -------------------------------------------------
+
+* @knht @Colin23 @RichardWeller @fx-ent

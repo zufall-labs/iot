@@ -1,0 +1,3 @@
+[submodule "qa"]
+    path = qa
+    url = git@github.com:zufall-labs/qa.git
