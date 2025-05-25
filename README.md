@@ -1,4 +1,4 @@
-# iot
+# IoT
 
 🤖 Everything IoT in regards to Zufall Labs hardware products
 
