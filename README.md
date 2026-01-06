@@ -2,6 +2,36 @@
 
 🤖 Everything IoT in regards to Zufall Labs hardware products
 
+# IoT Entropy-as-a-Service
+
+Hardware and software for generating and distributing true random numbers from chaotic oscillators.
+
+## Architecture
+
+- **Hardware**: Chaos Circuits Board with 4 oscillators + Raspberry Pi 4 + ADC
+- **Firmware**: N/A (using Raspberry Pi OS)
+- **Software**: Python-based entropy generation and MQTT publishing
+- **Backend**: Service mesh for distribution (separate repos)
+
+## Quick Start
+
+### Hardware Setup
+
+1. Connect Waveshare AD HAT to Raspberry Pi
+2. Connect chaos circuit VCE1 → ADC IN3
+3. Power: Pi 5V → Board VIN5V
+
+### Software Setup
+```bash
+cd software/adapters/adc-adapters/waveshare-ads1263
+pip install numpy scipy paho-mqtt
+
+# Run diagnostics
+cd ../../tools/diagnostics
+sudo python3 chaos_diagnostic.py
+```
+
+## Repository Structure
 ```
 /
 ├── .github/                      # GitHub specific configurations
@@ -72,3 +102,9 @@
 ├── README.md                  # Project overview and setup instructions
 └── CONTRIBUTING.md            # Contribution guidelines
 ```
+
+## Current Status
+
+✅ Hardware: Chaos Circuits Board designed and tested
+✅ Software: Chaos diagnostic tool working (Score: 90+)
+🚧 Next: MQTT integration for entropy publishing
