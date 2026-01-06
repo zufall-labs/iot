@@ -1,2 +1,37 @@
-.zflbs
-.idea
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+dist/
+*.o
+*.hex
+
+# KiCad
+*.bak
+*-rescue.lib
+*-rescue.dcm
+fp-info-cache
+*.kicad_pcb-bak
+*.kicad_sch-bak
+
+# Data files
+*.csv
+*.log
